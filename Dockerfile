@@ -1,9 +1,9 @@
-FROM --platform=${TARGETPLATFORM} caddy:latest
+FROM caddy:latest
 LABEL maintainer "anonymous"
 
 WORKDIR /root
-ARG TARGETPLATFORM
-ARG TAG
+ARG TARGETPLATFORM="linux/amd64"
+ARG TAG="latest"
 COPY * /root/
 
 RUN set -ex \
