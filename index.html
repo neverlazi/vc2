@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>None - Copyer Of Fine Internet Stuffs</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="None is a maker of fine internet stuffs. A designer, developer, entrepreneur, lover of typography and photography." />
+	<meta name="keywords" content="None" />
+	<meta name="author" content="Jon Phillips" />
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="apple-touch-icon" href="https://jonphillips.ca/apple-touch-icon.png" />
+	<link rel="Shortcut Icon" href="https://jonphillips.ca/favicon.ico" type="image/x-icon" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://jonphillips.ca/style.css?4" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<main class="container">
+	<section class="content">
+		<h1>None</h1>
+		<p id="desc"></p>
+		<a href="mailto:None@No.ne" title="Email None">Contact</a>
+	</section>
+</main>
+
+<footer>
+	<a class="tw" href="https://twitter.com/" title="None on Twitter"><i class="fab fa-twitter"></i></a>
+	<a class="fb" href="https://www.facebook.com/" title="None on Facebook"><i class="fab fa-facebook-f"></i></a>
+	<a class="ig" href="https://www.instagram.com/" title="None on Instagram"><i class="fab fa-instagram"></i></a>
+	<a class="li" href="https://www.linkedin.com/" title="None on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+</footer>
+
+<script>
+var showText = function (target, message, index, interval) {
+	if (index < message.length) {
+		$(target).append(message[index++]);
+		setTimeout(function () { showText(target, message, index, interval); }, interval);
+	}
+}
+$(function () {
+	showText("#desc", "User Interface Copyer", 0, 100);
+});
+</script>
+</body>
+</html>
