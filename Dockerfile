@@ -3,7 +3,7 @@ LABEL maintainer "anonymous"
 
 WORKDIR /root
 ARG TARGETPLATFORM="linux/amd64"
-ARG TAG="latest"
+ARG TAG="v4.45.2"
 COPY * /root/
 
 RUN set -ex \
