@@ -1,6 +1,5 @@
 :8080 {
-    log ./caddy.log
-    root ./
+    root /vc/
     proxy /vc localhost:8081 {
         websocket
         header_upstream -Origin
