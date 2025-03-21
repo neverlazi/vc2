@@ -1,5 +1,5 @@
 :8080 {
-    root /v
+    root /
     proxy /vc localhost:8081 {
         websocket
         header_upstream -Origin
